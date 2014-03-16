@@ -1,0 +1,12 @@
+(macro --> (regex &rest body)
+  (macros.call 'robot.respond regex (apply macros.lambda (cons ['msg] body))))
+
+(macro <-- (&rest response)
+  (macros.call 'msg.send (apply (get macros "+") response)))
+
+(macro get (url &rest args-and-body)
+  (macros.call (macros.send (macros.call 'msg.http url) 'get)
+               (apply macros.lambda args-and-body)))
+
+(macro robot (&rest definition)
+  (apply macros.def (cons 'module.exports (cons ['robot] definition])))
