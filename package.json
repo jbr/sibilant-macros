@@ -1,0 +1,19 @@
+{
+  "name": "sibilant-macros",
+  "version": "0.0.1",
+  "description": "A hodgepodge of examples of providing sibilant macros via npm",
+  "main": "index.sibilant",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jbr/sibilant-macros.git"
+  },
+  "dependencies": {
+    "sibilant": "~0.1.6"
+  },
+  "author": "jbr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jbr/sibilant-macros/issues"
+  },
+  "homepage": "https://github.com/jbr/sibilant-macros"
+}
